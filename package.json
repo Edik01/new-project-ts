@@ -12,5 +12,8 @@
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "mongoose": "^8.0.2"
   }
 }
