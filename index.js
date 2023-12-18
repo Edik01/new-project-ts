@@ -16,3 +16,21 @@ const cats = new Schema({
   nickname: String,
   age: Number,
 });
+
+const mysql = require("mysql");
+
+const connection = mysql.createConnection({
+  host: "your host",
+  user: "your_username",
+  password: "your_password",
+  database: "your_database",
+});
+
+connection.connect(
+  (err = {
+    if(err) {
+      console.error("Ошибка подключения к базе данных: " + err.stack);
+      return;
+    },
+  })
+);
