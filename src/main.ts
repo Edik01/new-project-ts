@@ -12,3 +12,4 @@ function onClick(this: HTMLElement, event: MouseEvent): void {
   console.log(event.target);
   alert("im her");
 }
+
